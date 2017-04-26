@@ -1,4 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<a href = "" [routerLink]="['/']">首頁</a>
+<a href = "" [routerLink]="['/product',1]"  >详情</a>
+<input type = "button" value="商品详情" (click)="toProductDetails()">
 <router-outlet></router-outlet>
