@@ -1,4 +1,10 @@
-<a href = "" [routerLink]="['/']">首頁</a>
-<a href = "" [routerLink]="['/product',1]"  >详情</a>
-<input type = "button" value="商品详情" (click)="toProductDetails()">
-<router-outlet></router-outlet>
+<div class="main" >
+	<a href = "" [routerLink]="['/']">首頁</a>
+	<a href = "" [routerLink]="['/product',1]"  >详情</a>
+	<input type = "button" value="商品详情" (click)="toProductDetails()">
+	<a href = "" [routerLink]="[{outlets:{aux:'chat'}}]">开始聊天</a>
+	<a href = "" [routerLink]="[{outlets:{aux:null}}]"  >结束聊天</a>
+</div>
+	<router-outlet></router-outlet>
+	<router-outlet name="aux"></router-outlet>
+

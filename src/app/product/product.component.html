@@ -1,8 +1,9 @@
-<p>
- 详情页
-</p>
-id是{{ productId }}
-<p><a href = "" [routerLink]="['./']">商品描述</a>
- <a href = "" [routerLink]="['./seller',99]">员工信息</a></p>
-
-<router-outlet></router-outlet>
+<div class="product">
+ <p>
+  详情页
+ </p>
+ id是{{ productId }}
+ <p><a href = "" [routerLink]="['./']">商品描述</a>
+  <a href = "" [routerLink]="['./seller',99]">员工信息</a></p>
+ <router-outlet></router-outlet>
+</div>
